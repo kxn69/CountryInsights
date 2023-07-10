@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Country Insights</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33045cdb22.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <heading>
+    <div id="heading-div">
+        <h2>World Countries Data</h2>
+        <p class="countries-count"></p>
+        <p class="countries-criteria"></p>
+    </div>
+        
+   </heading>
+   <div class="search-div">
+        <input type="text" id="search-bar" placeholder="Search countries by name, city and languages">
+        <div class="search-options">
+            <button class="name-button">name</button>
+            <button class="capital-button">capital</button>
+            <button class="population-button">population</button>
+            <a href="#graph"><span class="chart-column"><i class="fa-sharp fa-solid fa-chart-column"></i></span></a>
+        </div>
+   </div>
+   <div class="countries-list"></div>
+   <div id="graph">
+        <div class="graph-buttons">
+            <button class="population">Population</button>
+            <button class="languages">Languages</button>
+        </div>
+        <h4 class="graph-title"></h4>
+        <div class="graphs">
+            <div class="graph-wrapper" id="stat"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Developed by KxN</p>
+        <a href="#heading-div"><i class="fa-solid fa-arrow-up-long fa-2xl"></i></a>
+
+    </footer>
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
